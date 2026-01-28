@@ -27,9 +27,9 @@
     "@types/react-dom": "^19.2.3",
     "contentful": "^10.8.6",
     "eslint": "^7.32.0",
-    "eslint-config-custom": "*",
-    "tsconfig": "*",
-    "tsup-config": "*",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "tsup-config": "workspace:*",
     "typescript": "^5.5.4"
   },
   "peerDependencies": {
