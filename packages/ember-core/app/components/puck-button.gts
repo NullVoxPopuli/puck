@@ -101,7 +101,7 @@ export default class PuckButtonComponent extends Component<ButtonSignature> {
         {{yield}}
         {{#if this.loading}}
           <div class="puck-button__spinner">
-            <PuckLoader @size={{14}} />
+            {{! TODO: Replace with PuckLoader component }}<span class="loading-spinner">⏳</span>
           </div>
         {{/if}}
       </a>
@@ -122,7 +122,7 @@ export default class PuckButtonComponent extends Component<ButtonSignature> {
         {{yield}}
         {{#if this.loading}}
           <div class="puck-button__spinner">
-            <PuckLoader @size={{14}} />
+            {{! TODO: Replace with PuckLoader component }}<span class="loading-spinner">⏳</span>
           </div>
         {{/if}}
       </button>
@@ -141,7 +141,7 @@ export default class PuckButtonComponent extends Component<ButtonSignature> {
         {{yield}}
         {{#if this.loading}}
           <div class="puck-button__spinner">
-            <PuckLoader @size={{14}} />
+            {{! TODO: Replace with PuckLoader component }}<span class="loading-spinner">⏳</span>
           </div>
         {{/if}}
       </span>

@@ -111,11 +111,12 @@ module('Integration | Component | puck-button', function (hooks) {
     await render(<template>
       <PuckButton>
         <:icon>⭐</:icon>
-        With Icon
+        <:default>With Icon</:default>
       </PuckButton>
     </template>);
 
     assert.dom('.puck-button__icon').exists();
     assert.dom('.puck-button__icon').hasText('⭐');
+    assert.dom('.puck-button').containsText('With Icon');
   });
 });
