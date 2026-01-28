@@ -1,7 +1,18 @@
-# ember-core
+# @puckeditor/ember-core
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+The open-source visual editor for Ember.js - an Ember.js implementation of Puck.
+
+This is a modern Ember.js v6+ implementation of the Puck visual editor, using:
+- **pnpm** for package management
+- **Vite** for building
+- **QUnit** for testing  
+- **GTS** (Glimmer TypeScript) for components (no .hbs files)
+- **Tracked properties** for state management
+- **Modern Ember.js patterns** throughout
+
+## Status
+
+🚧 **Work in Progress** - This is an active conversion from the React-based Puck editor to Ember.js.
 
 ## Prerequisites
 

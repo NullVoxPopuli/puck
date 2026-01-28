@@ -1,1 +1,6 @@
 /* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+
+/* Import component styles */
+@import './components/puck-button.css';
+
+/* Future component imports will go here */

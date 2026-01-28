@@ -9,7 +9,7 @@
   </picture>
 </a>
 
-_The visual editor for React_
+_The visual editor for React (and Ember.js)_
 
 [Documentation](https://puckeditor.com/docs?utm_source=readme&utm_medium=code&utm_campaign=repo&utm_contents=docs_link) • [Demo](https://demo.puckeditor.com/edit?utm_source=readme&utm_medium=code&utm_campaign=repo&utm_contents=demo_link) • [Discord](https://discord.gg/V9mDAhuxyZ) • [Contributing](https://github.com/puckeditor/puck/blob/main/CONTRIBUTING.md)
 
@@ -28,6 +28,21 @@ Puck is a modular, open-source visual editor for React.js. You can use Puck to b
 Because Puck is just a React component, it plays well with all React.js environments, including Next.js. You own your data and there’s no vendor lock-in.
 
 Puck is also [licensed under MIT](https://github.com/puckeditor/puck?tab=MIT-1-ov-file#readme), making it suitable for both internal systems and commercial applications.
+
+## 🚧 Ember.js Version
+
+This fork includes a modern **Ember.js v6+** implementation of Puck with:
+- ✅ **pnpm** package management
+- ✅ **Vite** build system
+- ✅ **QUnit** testing
+- ✅ **GTS** (Glimmer TypeScript) components - no .hbs files
+- ✅ **Modern Ember.js patterns**
+
+See [`packages/ember-core/`](./packages/ember-core/) for the Ember.js implementation and [`EMBER_CONVERSION_GUIDE.md`](./EMBER_CONVERSION_GUIDE.md) for the conversion approach.
+
+**Status**: Active development - converting React components to Ember GTS format.
+
+---
 
 ## Quick start
 

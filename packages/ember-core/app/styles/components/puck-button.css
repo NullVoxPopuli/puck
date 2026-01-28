@@ -1,0 +1,100 @@
+/* Puck Button Component Styles */
+
+.puck-button {
+  appearance: none;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: var(--puck-color-white, #fff);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.05ch;
+  font-family: var(--puck-font-family, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif);
+  font-size: 14px;
+  font-weight: 400;
+  box-sizing: border-box;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 50ms ease-in;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.puck-button:hover,
+.puck-button:active {
+  transition: none;
+}
+
+.puck-button--medium {
+  min-height: 34px;
+  padding-bottom: 7px;
+  padding-inline-start: 19px;
+  padding-inline-end: 19px;
+  padding-top: 7px;
+}
+
+.puck-button--large {
+  padding-bottom: 11px;
+  padding-inline-start: 19px;
+  padding-inline-end: 19px;
+  padding-top: 11px;
+}
+
+.puck-button__icon {
+  margin-top: 2px;
+}
+
+.puck-button--primary {
+  background: var(--puck-color-azure-04, #3b82f6);
+}
+
+.puck-button:focus-visible {
+  outline: 2px solid var(--puck-color-azure-05, #60a5fa);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .puck-button--primary:hover {
+    background-color: var(--puck-color-azure-03, #2563eb);
+  }
+}
+
+.puck-button--primary:active {
+  background-color: var(--puck-color-azure-02, #1d4ed8);
+}
+
+.puck-button--secondary {
+  border: 1px solid currentColor;
+  color: currentColor;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .puck-button--secondary:hover {
+    background-color: var(--puck-color-azure-12, #eff6ff);
+    color: var(--puck-color-black, #000);
+  }
+}
+
+.puck-button--secondary:active {
+  background-color: var(--puck-color-azure-11, #dbeafe);
+  color: var(--puck-color-black, #000);
+}
+
+.puck-button--disabled,
+.puck-button--disabled:hover {
+  background-color: var(--puck-color-grey-07, #9ca3af);
+  color: var(--puck-color-grey-03, #d1d5db);
+  cursor: not-allowed;
+}
+
+.puck-button--full-width {
+  justify-content: center;
+  width: 100%;
+}
+
+.puck-button__spinner {
+  padding-inline-start: 8px;
+}
